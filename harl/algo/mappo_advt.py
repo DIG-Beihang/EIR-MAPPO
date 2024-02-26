@@ -3,7 +3,6 @@ import torch
 import torch.nn as nn
 from harl.util.util import get_grad_norm, check, softmax, update_linear_schedule
 from harl.algo.base import Base
-from harl.model.actor import Actor
 from harl.model.adv_actor import AdvActor
 
 

@@ -8,7 +8,6 @@ from harl.common.critic_buffer_ep import CriticBufferEP
 from harl.common.critic_buffer_fp import CriticBufferFP
 from harl.algo import ALGO_REGISTRY
 from harl.common.v_critic import VCritic
-from harl.common.discrete_q_critic import DiscreteQCritic
 from harl.common.fgsm import FGSM
 import time
 import numpy as np

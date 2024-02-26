@@ -1,9 +1,4 @@
-import numpy as np
-import torch
-import torch.nn as nn
-from harl.util.util import get_grad_norm, check
 from harl.algo.mappo_advt_with_belief import MAPPOAdvtBelief
-from harl.model.actor import Actor
 
 
 class MAPPOTraitorBelief(MAPPOAdvtBelief):

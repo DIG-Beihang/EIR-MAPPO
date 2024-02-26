@@ -1,4 +1,3 @@
-import numpy as np
 import torch
 import torch.nn as nn
 from harl.util.util import get_grad_norm, huber_loss, mse_loss, update_linear_schedule

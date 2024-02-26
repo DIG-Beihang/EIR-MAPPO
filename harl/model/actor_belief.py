@@ -1,12 +1,12 @@
 import copy
 import torch
 import torch.nn as nn
-from harl.util.util import init, check
+from harl.util.util import check
 from harl.model.cnn import CNNBase
 from harl.model.mlp import MLPBase
 from harl.model.rnn import RNNLayer
 from harl.model.act import ACTLayer
-from harl.util.util import get_shape_from_obs_space, get_obs_space_type
+from harl.util.util import get_shape_from_obs_space
 
 
 class ActorBelief(nn.Module):

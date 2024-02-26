@@ -1,7 +1,6 @@
 import torch
 import numpy as np
-from collections import defaultdict
-from harl.util.util import check, get_shape_from_obs_space, get_shape_from_act_space, _flatten, _sa_cast
+from harl.util.util import _flatten, _sa_cast
 from harl.common.actor_buffer_advt import ActorBufferAdvt
 
 class ActorBufferAdvtBelief(ActorBufferAdvt):

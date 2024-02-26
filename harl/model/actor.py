@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from harl.util.util import init, check
+from harl.util.util import check
 from harl.model.cnn import CNNBase
 from harl.model.mlp import MLPBase
 from harl.model.rnn import RNNLayer
