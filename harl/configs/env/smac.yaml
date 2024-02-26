@@ -1,0 +1,3 @@
+map_name: 4m_vs_3m
+state_type: FP # choose from FP (Feature Pruned) and EP (Environment Provided)
+obs_agent_adversary: True

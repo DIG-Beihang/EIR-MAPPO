@@ -1,0 +1,4 @@
+size: "tiny" # "small"
+n_agents: 3
+difficulty: "normal"
+obs_agent_adversary: True

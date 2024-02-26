@@ -1,0 +1,17 @@
+scenario: cover
+obs_mode: mappo_obs_mode
+dynamics: direct
+nr_agents: 5
+int_points_num: 30
+# 通信距离 
+comm_radius: 40
+world_size: 100
+distance_bins: 8
+bearing_bins: 8
+# 之前训练效果最好的一个版本用的是True
+torus: False
+state_type: FP
+equ_nf: 4
+windows_size: 3
+use_history: False
+obs_agent_adversary: True

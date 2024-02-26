@@ -1,0 +1,16 @@
+scenario: pursuit
+obs_mode: eghn_acc
+dynamics: direct
+evader_policy: tac
+nr_agents: 10
+nr_evaders: 1
+# comm_radius: 200
+world_size: 100
+distance_bins: 8
+bearing_bins: 8
+torus: True
+state_type: FP
+equ_nf: 4
+windows_size: 2
+use_history: False
+obs_agent_adversary: True

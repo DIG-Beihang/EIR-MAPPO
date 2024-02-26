@@ -1,0 +1,15 @@
+scenario: navigation
+obs_mode: eghn_acc
+dynamics: direct
+nr_agents: 10
+int_points_num: 3
+# comm_radius: 200
+world_size: 100
+distance_bins: 8
+bearing_bins: 8
+torus: False
+state_type: FP 
+equ_nf: 4
+windows_size: 3
+use_history: False
+obs_agent_adversary: True

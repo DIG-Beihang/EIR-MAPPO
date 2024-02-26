@@ -1,0 +1,10 @@
+# scenario: simple_spread_v2 # choose from simple_spread_v2, simple_reference_v2, simple_speaker_listener_v3
+# N: 4
+
+scenario: simple_spread_v2
+# N: 3
+# N_landmark: 3
+# collision_penality: 1
+
+continuous_actions: False
+obs_agent_adversary: True

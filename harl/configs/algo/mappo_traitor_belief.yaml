@@ -1,0 +1,92 @@
+seed:
+  seed_specify: True
+  seed: 1
+device:
+  cuda: True
+  cuda_deterministic: True
+  torch_threads: 4
+train:
+  n_rollout_threads: 20
+  num_env_steps: 5000000
+  episode_length: 200
+  log_interval: 5
+  eval_interval: 25
+  use_popart: True
+  use_linear_lr_decay: False
+  use_proper_time_limits: True
+  model_dir: ~
+  adv_model_dir: ~
+eval:
+  use_eval: True
+  n_eval_rollout_threads: 10
+  eval_episodes: 20
+render:
+  use_render: False
+  render_mode: ~
+  render_episodes: 10 # how many episodes to render
+model:
+  # network parameters
+  hidden_sizes: [128, 128, 128]
+  adv_hidden_sizes: [128, 128, 128]
+  activation_func: relu # choose from sigmoid, tanh, relu, leaky_relu, selu
+  use_feature_normalization: True
+  initialization_method: orthogonal_ # choose from xavier_uniform_, orthogonal_, ...
+  gain: 0.01
+  # recurrent parameters
+  use_naive_recurrent_policy: False
+  use_recurrent_policy: False
+  use_recurrent_belief: True
+  recurrent_N: 1
+  data_chunk_length: 10
+  # optimizer parameters
+  lr: 0.0005
+  critic_lr: 0.0005
+  belief_lr: 0.0005
+  adv_lr: 0.0005
+  adv_epoch: 1
+  opti_eps: 0.00001
+  weight_decay: 0
+  std_x_coef: 1
+  std_y_coef: 0.5
+  # belief/critic parameters
+  hard_belief_thres: 0.5  # used for hard belief only. threshold for determining allies to be ally or adversary
+  critic_option: direct  # 'direct', belief directly conditioned, 'factorize', factorize the belief. for 'factorize', use softplus for critic with adversary. for critic, whether belief is used as condition directly, or we factorize the critic and use belief to add on it
+algo:
+  share_param: True
+  # ppo parameters
+  ppo_epoch: 5
+  critic_epoch: 5
+  use_clipped_value_loss: True
+  clip_param: 0.05
+  actor_num_mini_batch: 1
+  critic_num_mini_batch: 1
+  entropy_coef: 0.01
+  value_loss_coef: 1
+  use_max_grad_norm: True
+  max_grad_norm: 10.0
+  use_gae: True
+  gamma: 0.95
+  gae_lambda: 0.95
+  use_huber_loss: True
+  use_policy_active_masks: True
+  use_belief_active_masks: False
+  huber_delta: 10.0
+  action_aggregation: prod # choose from prod, mean
+  # adv training
+  adv_prob: 1 # fixed
+  agent_adversary: 0
+  victim_interval: 1
+  adv_entropy_coef: 0.01
+  super_adversary: False
+  belief: True
+  load_critic: False
+  load_adv_actor: False
+  belief_option: soft # whether the belief is a probability, or a hard label. 'soft': use probability, 'hard': hard update
+  central_belief_option: separate # choose from 'mean' (take mean of belief), 'separate' (belief of individual). whether the belief used to train central critic is calculated as the mean of individual belief, or each agent train their own critic
+  # state adv
+  state_adversary: False
+  obs_offset: 0
+  eps: 1
+  iter: 5
+  alpha_rate: 3
+  belief_attack: False

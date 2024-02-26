@@ -1,0 +1,14 @@
+scenario: rendezvous
+obs_mode: eghn_acc
+dynamics: direct_acc
+nr_agents: 10
+comm_radius: 282
+world_size: 200
+distance_bins: 8
+bearing_bins: 8
+torus: False
+state_type: FP
+equ_nf: 4
+windows_size: 2
+use_history: False
+obs_agent_adversary: True
