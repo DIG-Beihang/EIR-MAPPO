@@ -1,7 +1,7 @@
 import argparse
 import json
-from harl.util.args_util import get_args, update_args
-from harl.runner import RUNNER_REGISTRY
+from eir_mappo.util.args_util import get_args, update_args
+from eir_mappo.runner import RUNNER_REGISTRY
 
 
 def main():
