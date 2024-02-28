@@ -1,6 +1,6 @@
 # **Byzantine Robust Cooperative Multi-Agent Reinforcement Learning as a Bayesian Game**
 
-This repository contains the implementation of the EIR-MAPPO defense method, along with several Multi-Agent Reinforcement Learning (MARL) environments used for evaluating our results, such as Toy, LBF, and SMAC.
+This repository is the official implementation of the paper accepted by ICLR 2024: Byzantine Robust Cooperative Multi-Agent Reinforcement Learning as a Bayesian Game. It contains the implementation of the EIR-MAPPO defense method, along with several Multi-Agent Reinforcement Learning (MARL) environments used for evaluating our results, such as Toy, LBF, and SMAC.
 
 ## How to Run This Code
 
@@ -72,3 +72,17 @@ datas: ./eir_mappo/results/{env}/mappo_traitor_belief/{exp_name}/{seed}/run{iter
 ```
 
 * `{env}, {map_name}, {exp_name}, {seed}, {iter}`: These placeholders are as previously described.
+
+## Demo Videos
+
+We evaluate our performance under the most arduous non-oblivious attack, where an adversary can manipulate any agent in cooperative tasks and execute an arbitrary learned worst-case policy. We also record the behaviors of the agents under the attack in the videos. These videos showcase our methods alongside the baseline methods in the *12x12-4p-3f-c* configuration of the LBF environment and the *4m vs 3m* scenario of the SMAC MARL environment, as illustrated in the table below.
+
+| Training algorithm | Video Directory                                              |
+| ------------------ | ------------------------------------------------------------ |
+| MADDPG             | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
+| M3DDPG             | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
+| MAPPO              | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
+| RMAAC              | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
+| EAR-MAPPO          | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
+| EIR-MAPPO          | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
+| True Type          | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
