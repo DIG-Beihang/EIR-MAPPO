@@ -80,9 +80,9 @@ We evaluate our performance under the most arduous non-oblivious attack, where a
 | Training algorithm | Video Directory                                              |
 | ------------------ | ------------------------------------------------------------ |
 | MADDPG             | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
-| M3DDPG             | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
-| MAPPO              | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
-| RMAAC              | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
-| EAR-MAPPO          | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
-| EIR-MAPPO          | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
-| True Type          | [LBF video](./video/LBF/MADDPG.m4v) [SMAC video](./video/SMAC/MADDPG.m4v) |
+| M3DDPG             | [LBF video](./video/LBF/M3DDPG.m4v) [SMAC video](./video/SMAC/M3DDPG.m4v) |
+| MAPPO              | [LBF video](./video/LBF/MAPPO.m4v) [SMAC video](./video/SMAC/MAPPO.m4v) |
+| RMAAC              | [LBF video](./video/LBF/RMAAC.m4v) [SMAC video](./video/SMAC/RMAAC.m4v) |
+| EAR-MAPPO          | [LBF video](./video/LBF/EAR-MAPPO.m4v) [SMAC video](./video/SMAC/EAR-MAPPO.m4v) |
+| EIR-MAPPO          | [LBF video](./video/LBF/EIR-MAPPO.m4v) [SMAC video](./video/SMAC/EIR-MAPPO.m4v) |
+| True Type          | [LBF video](./video/LBF/True Type.m4v) [SMAC video](./video/SMAC/True Type.m4v) |
