@@ -85,4 +85,4 @@ We evaluate our performance under the most arduous non-oblivious attack, where a
 | RMAAC              | [LBF video](./video/LBF/RMAAC.m4v) [SMAC video](./video/SMAC/RMAAC.m4v) |
 | EAR-MAPPO          | [LBF video](./video/LBF/EAR-MAPPO.m4v) [SMAC video](./video/SMAC/EAR-MAPPO.m4v) |
 | EIR-MAPPO          | [LBF video](./video/LBF/EIR-MAPPO.m4v) [SMAC video](./video/SMAC/EIR-MAPPO.m4v) |
-| True Type          | [LBF video](./video/LBF/True Type.m4v) [SMAC video](./video/SMAC/True Type.m4v) |
+| True Type          | [LBF video](./video/LBF/True-Type.m4v) [SMAC video](./video/SMAC/True-Type.m4v) |
