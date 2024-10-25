@@ -2,7 +2,13 @@
 
 This repository is the official implementation of the paper accepted by ICLR 2024: Byzantine Robust Cooperative Multi-Agent Reinforcement Learning as a Bayesian Game. It contains the implementation of the EIR-MAPPO defense method, along with several Multi-Agent Reinforcement Learning (MARL) environments used for evaluating our results, such as Toy, LBF, and SMAC.
 
+This repository is based on [PKU-MARL/HARL](https://github.com/PKU-MARL/HARL).
+
 ## How to Run This Code
+
+### Environment Setup
+
+The process of environment setup is the same as in [PKU-MARL/HARL](https://github.com/PKU-MARL/HARL). For details, please refer to the README file in that repository.
 
 ### Choose the Training algorithm and Environment
 
